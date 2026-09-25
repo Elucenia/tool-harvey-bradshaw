@@ -1,0 +1,253 @@
+{
+  "tool": {
+    "id": "harvey-bradshaw",
+    "title": "Índice de Harvey-Bradshaw",
+    "short": "Atividade clínica da doença de Crohn",
+    "desc": "Calcule o índice de Harvey-Bradshaw na doença de Crohn: bem-estar, dor abdominal, evacuações líquidas, massa abdominal e complicações, com a faixa de atividade.",
+    "lead": "Versão simplificada do CDAI que mede a atividade clínica da doença de Crohn com dados de um único dia. Serve para acompanhar a resposta ao tratamento no consultório.",
+    "spec": [
+      "gastroenterologia",
+      "coloproctologia"
+    ],
+    "fields": [
+      [
+        "bem",
+        "Bem-estar geral (dia anterior)",
+        "sel",
+        {
+          "opts": {
+            "0": "Muito bem",
+            "1": "Levemente abaixo do normal",
+            "2": "Ruim",
+            "3": "Muito ruim",
+            "4": "Péssimo"
+          }
+        }
+      ],
+      [
+        "dor",
+        "Dor abdominal (dia anterior)",
+        "radio",
+        {
+          "opts": {
+            "0": "Nenhuma",
+            "1": "Leve",
+            "2": "Moderada",
+            "3": "Intensa"
+          }
+        }
+      ],
+      [
+        "evac",
+        "Evacuações líquidas ou muito moles (dia anterior)",
+        "num",
+        {
+          "min": 0,
+          "max": 40,
+          "step": 1,
+          "unit": "por dia",
+          "ph": "3"
+        }
+      ],
+      [
+        "massa",
+        "Massa abdominal",
+        "radio",
+        {
+          "opts": {
+            "0": "Ausente",
+            "1": "Duvidosa",
+            "2": "Definida",
+            "3": "Definida e dolorosa"
+          }
+        }
+      ],
+      [
+        "artralgia",
+        "Artralgia",
+        "chk",
+        []
+      ],
+      [
+        "uveite",
+        "Uveíte",
+        "chk",
+        []
+      ],
+      [
+        "eritema",
+        "Eritema nodoso",
+        "chk",
+        []
+      ],
+      [
+        "aftas",
+        "Úlceras aftosas",
+        "chk",
+        []
+      ],
+      [
+        "pioderma",
+        "Pioderma gangrenoso",
+        "chk",
+        []
+      ],
+      [
+        "fissura",
+        "Fissura anal",
+        "chk",
+        []
+      ],
+      [
+        "fistula",
+        "Fístula nova",
+        "chk",
+        []
+      ],
+      [
+        "abscesso",
+        "Abscesso",
+        "chk",
+        []
+      ]
+    ],
+    "formula": "<p>Bem-estar (0 a 4) + dor abdominal (0 a 3) + número de evacuações líquidas no dia anterior + massa abdominal (0 a 3) + 1 ponto por complicação presente.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Atividade"
+      ],
+      [
+        "&lt; 5",
+        "Remissão"
+      ],
+      [
+        "5 a 7",
+        "Leve"
+      ],
+      [
+        "8 a 16",
+        "Moderada"
+      ],
+      [
+        "&gt; 16",
+        "Grave"
+      ]
+    ],
+    "table_note": "Faixas equivalentes ao CDAI propostas por Best (2006). HBI ≤ 4 corresponde a CDAI ≤ 150 (remissão); queda de 3 pontos corresponde a resposta clínica (Vermeire 2010).",
+    "tips": [
+      "Queda de <strong>3 pontos ou mais</strong> equivale à resposta clínica usada nos estudos (redução de 100 pontos no CDAI).",
+      "O índice mede sintomas: remissão clínica não garante cicatrização da mucosa. Confirme com calprotectina fecal, PCR ou colonoscopia.",
+      "Diarreia por supercrescimento bacteriano, má absorção de sais biliares ou intestino curto eleva o escore sem inflamação ativa.",
+      "Na doença perianal isolada, o índice é pouco sensível: avalie as fístulas separadamente."
+    ],
+    "sources": [
+      [
+        "Harvey RF, Bradshaw JM. A simple index of Crohn's-disease activity. Lancet, 1980.",
+        "https://doi.org/10.1016/S0140-6736(80)92767-1"
+      ],
+      [
+        "Best WR. Predicting the Crohn's disease activity index from the Harvey-Bradshaw Index. Inflamm Bowel Dis, 2006.",
+        "https://doi.org/10.1097/01.MIB.0000215091.77492.2a"
+      ],
+      [
+        "Vermeire S et al. Correlation between the Crohn's disease activity and Harvey-Bradshaw indices in assessing Crohn's disease severity. Clin Gastroenterol Hepatol, 2010.",
+        "https://doi.org/10.1016/j.cgh.2010.01.001"
+      ]
+    ],
+    "cases": [
+      [
+        "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+        {
+          "bem": "0",
+          "dor": "0",
+          "evac": 2,
+          "massa": "0"
+        },
+        {
+          "score": 2,
+          "level": "low",
+          "verdict": "Remissão"
+        }
+      ],
+      [
+        "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+        {
+          "bem": "1",
+          "dor": "1",
+          "evac": 3,
+          "massa": "0"
+        },
+        {
+          "score": 5,
+          "level": "mid",
+          "verdict": "leve"
+        }
+      ],
+      [
+        "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+        {
+          "bem": "2",
+          "dor": "2",
+          "evac": 8,
+          "massa": "2",
+          "artralgia": true,
+          "fistula": true
+        },
+        {
+          "score": 16,
+          "level": "high",
+          "verdict": "moderada"
+        }
+      ],
+      [
+        "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+        {
+          "bem": "3",
+          "dor": "3",
+          "evac": 10,
+          "massa": "3",
+          "uveite": true,
+          "abscesso": true
+        },
+        {
+          "score": 21,
+          "level": "high",
+          "verdict": "grave"
+        }
+      ]
+    ],
+    "batch": "renal-digestivo",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "renal-digestivo",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/renal-digestivo.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/renal-digestivo.php",
+    "sha256": "95087d729438637d36e1a49af04d8de0fe1d9f7876443084443906a9281ef107",
+    "bytes": 109421
+  },
+  "clinicalValidation": "not-performed"
+}

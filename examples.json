@@ -1,0 +1,94 @@
+[
+  {
+    "label": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "massa": "0"
+    },
+    "expected": {
+      "score": 2,
+      "level": "low",
+      "verdict": "Remissão"
+    },
+    "originalInput": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "massa": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+    "input": {
+      "bem": "1",
+      "dor": "1",
+      "evac": 3,
+      "massa": "0"
+    },
+    "expected": {
+      "score": 5,
+      "level": "mid",
+      "verdict": "leve"
+    },
+    "originalInput": {
+      "bem": "1",
+      "dor": "1",
+      "evac": 3,
+      "massa": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+    "input": {
+      "bem": "2",
+      "dor": "2",
+      "evac": 8,
+      "massa": "2",
+      "artralgia": true,
+      "fistula": true
+    },
+    "expected": {
+      "score": 16,
+      "level": "high",
+      "verdict": "moderada"
+    },
+    "originalInput": {
+      "bem": "2",
+      "dor": "2",
+      "evac": 8,
+      "massa": "2",
+      "artralgia": true,
+      "fistula": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+    "input": {
+      "bem": "3",
+      "dor": "3",
+      "evac": 10,
+      "massa": "3",
+      "uveite": true,
+      "abscesso": true
+    },
+    "expected": {
+      "score": 21,
+      "level": "high",
+      "verdict": "grave"
+    },
+    "originalInput": {
+      "bem": "3",
+      "dor": "3",
+      "evac": 10,
+      "massa": "3",
+      "uveite": true,
+      "abscesso": true
+    },
+    "expandedZeroOptions": []
+  }
+]
