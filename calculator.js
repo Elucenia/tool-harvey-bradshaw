@@ -1,11 +1,11 @@
-/* tool-harvey-bradshaw · Elucenia · https://github.com/Elucenia/tool-harvey-bradshaw
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-harvey-bradshaw · ELUCENIA · https://github.com/Elucenia/tool-harvey-bradshaw
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"harvey-bradshaw","title":"Índice de Harvey-Bradshaw","fields":[["bem","Bem-estar geral (dia anterior)","sel",{"opts":{"0":"Muito bem","1":"Levemente abaixo do normal","2":"Ruim","3":"Muito ruim","4":"Péssimo"}}],["dor","Dor abdominal (dia anterior)","radio",{"opts":{"0":"Nenhuma","1":"Leve","2":"Moderada","3":"Intensa"}}],["evac","Evacuações líquidas ou muito moles (dia anterior)","num",{"min":0,"max":40,"step":1,"unit":"por dia","ph":"3"}],["massa","Massa abdominal","radio",{"opts":{"0":"Ausente","1":"Duvidosa","2":"Definida","3":"Definida e dolorosa"}}],["artralgia","Artralgia","chk",[]],["uveite","Uveíte","chk",[]],["eritema","Eritema nodoso","chk",[]],["aftas","Úlceras aftosas","chk",[]],["pioderma","Pioderma gangrenoso","chk",[]],["fissura","Fissura anal","chk",[]],["fistula","Fístula nova","chk",[]],["abscesso","Abscesso","chk",[]]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
