@@ -5,6 +5,7 @@
     "short": "Atividade clínica da doença de Crohn",
     "desc": "Calcule o índice de Harvey-Bradshaw na doença de Crohn: bem-estar, dor abdominal, evacuações líquidas, massa abdominal e complicações, com a faixa de atividade.",
     "lead": "Versão simplificada do CDAI que mede a atividade clínica da doença de Crohn com dados de um único dia. Serve para acompanhar a resposta ao tratamento no consultório.",
+    "kind": "Calculadora",
     "spec": [
       "gastroenterologia",
       "coloproctologia"
@@ -66,81 +67,52 @@
         "artralgia",
         "Artralgia",
         "chk",
-        []
+        {}
       ],
       [
         "uveite",
         "Uveíte",
         "chk",
-        []
+        {}
       ],
       [
         "eritema",
         "Eritema nodoso",
         "chk",
-        []
+        {}
       ],
       [
         "aftas",
         "Úlceras aftosas",
         "chk",
-        []
+        {}
       ],
       [
         "pioderma",
         "Pioderma gangrenoso",
         "chk",
-        []
+        {}
       ],
       [
         "fissura",
         "Fissura anal",
         "chk",
-        []
+        {}
       ],
       [
         "fistula",
         "Fístula nova",
         "chk",
-        []
+        {}
       ],
       [
         "abscesso",
         "Abscesso",
         "chk",
-        []
+        {}
       ]
     ],
     "formula": "<p>Bem-estar (0 a 4) + dor abdominal (0 a 3) + número de evacuações líquidas no dia anterior + massa abdominal (0 a 3) + 1 ponto por complicação presente.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Atividade"
-      ],
-      [
-        "&lt; 5",
-        "Remissão"
-      ],
-      [
-        "5 a 7",
-        "Leve"
-      ],
-      [
-        "8 a 16",
-        "Moderada"
-      ],
-      [
-        "&gt; 16",
-        "Grave"
-      ]
-    ],
-    "table_note": "Faixas equivalentes ao CDAI propostas por Best (2006). HBI ≤ 4 corresponde a CDAI ≤ 150 (remissão); queda de 3 pontos corresponde a resposta clínica (Vermeire 2010).",
-    "tips": [
-      "Queda de <strong>3 pontos ou mais</strong> equivale à resposta clínica usada nos estudos (redução de 100 pontos no CDAI).",
-      "O índice mede sintomas: remissão clínica não garante cicatrização da mucosa. Confirme com calprotectina fecal, PCR ou colonoscopia.",
-      "Diarreia por supercrescimento bacteriano, má absorção de sais biliares ou intestino curto eleva o escore sem inflamação ativa.",
-      "Na doença perianal isolada, o índice é pouco sensível: avalie as fístulas separadamente."
-    ],
     "sources": [
       [
         "Harvey RF, Bradshaw JM. A simple index of Crohn's-disease activity. Lancet, 1980.",
@@ -217,9 +189,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -228,17 +197,574 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:33:44.535Z",
+      "total": 12960,
+      "passed": 12960,
+      "sourceRowCount": 12960,
+      "uniqueApiInputCount": 12960,
+      "sourceContextCount": 12960,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "8c626a144b08b7f01ab01833f3aa745a45b41b4cbce42923d413121f9474f6b6",
+        "total": 12960,
+        "bankRowCount": 12960,
+        "uniqueApiInputCount": 12960,
+        "sourceContextCount": 12960,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/root-six-independent-expectations-final29.json",
+            "sha256": "92f70c18f7b9f7b96089197af3288c3e7695f1c8e219ef036d4f0989bddfb125"
+          },
+          {
+            "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+            "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/root-six-independent-source-check-final29.json",
+          "sha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043"
+        }
+      },
+      "inputIdentity": "Exact complete immutable API input objects; not execution/runtime counts",
+      "scope": "All80 wellbeing/pain/mass codes crossed with nine stoolcounts and none/all/onepresent/oneabsent complication witnesses. Not allopenstoolcount combinations.",
+      "sources": [
+        {
+          "review": {
+            "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+            "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+          },
+          "item": {
+            "id": "harvey-bradshaw",
+            "edition": "HBI1980 five components reproduced in primary sponsor protocolMLN0002_401v3.1 AppendixG printed59 (PDFpage60)",
+            "reads": [
+              {
+                "url": "https://catalogues.ema.europa.eu/sites/default/files/document_files/MLN0002_401-Protocol-V3.1-Redacted.pdf",
+                "read": "Sponsor trial protocol in official EMA catalogue. AppendixG table, eight complications, total and severity rows visually read. No claim original1980 full paper was obtained.",
+                "artifact": {
+                  "file": "root-source29-primary-pdfs/harvey-bradshaw-ema-protocol-v3-1.pdf",
+                  "sha256": "aa4e4e7035f1b806f5e25b5084b1d50fbe6fecacf47f7722b291b3e613024bd3",
+                  "bytes": 8296802
+                }
+              }
+            ],
+            "constants": {
+              "wellbeing": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "pain": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "mass": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "complicationKeys": [
+                "artralgia",
+                "uveite",
+                "eritema",
+                "aftas",
+                "pioderma",
+                "fissura",
+                "fistula",
+                "abscesso"
+              ],
+              "eachComplication": 1,
+              "stoolWitnesses": [
+                0,
+                1,
+                4,
+                5,
+                7,
+                8,
+                16,
+                17,
+                40
+              ]
+            },
+            "limitations": [
+              "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+              "Original stool count is open. Current local maximum40 is an implementation input bound and not the source theoretical maximum. Finite witnesses do not certify every count or everycomplication combination. No exact CDAI conversion, clinical remission or prognostic approval. The sponsor protocol displays proprietary terms; its use here is private factual numeric verification, not a redistribution/translation licence."
+            ]
+          },
+          "originalSourceReview": {
+            "file": "root-six-primary-source-review-final29.json",
+            "sha256": "5bc754345b3db4ae9521890531cd0e244684bfd168ab88b0b882045fc7b7f036"
+          },
+          "erratum": "Rockall original>100 narrative is retained in the original review; primaryR2 corrects it to≥100 without changing oracle, inputs or code."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/root-six-independent-source-check-final29.json",
+      "evidenceSha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043",
+      "independentPeer": {
+        "status": "reviewed",
+        "file": "reports/review-20261003/root-six-independent-peer-publication-final29-r2.json",
+        "sha256": "9a364220970a26f43c0d738bb7f1b1dfe96d33f064478c7d6c830c1dc0f72518",
+        "scope": "Independent numeric/source-scope peer only",
+        "factualSourceAmendment": {
+          "file": "reports/review-20261003/root-six-publication-own-source-review-final29-r2.json",
+          "sha256": "c5b320651855564578dbb871a91bd9770c09594497b40ea0560be84d75d8139c"
+        }
+      },
+      "metadataPackagingPeer": {
+        "status": "reviewed",
+        "file": "reports/review-20261003/root-six-bank-packaging-peer-final29-r2.json",
+        "sha256": "e1bfe5287b4cc1defcce6c29ecc9d901cf9b5be19aeb047499da56273b9feb69",
+        "scope": "Independent technical bank/helper packaging and frozen raw-output replay; no clinical, professional-language, source-rights or full-method approval.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "originalSourceExecutions": 116640,
+      "freshPreparationSampleExecutions": 12,
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/harvey-bradshaw/calculator.js",
+          "sha256": "b354c019961f8e41af4f547aa60a4f162fa9b66d69cd23ffbf4e63f2638f1260",
+          "bytes": 5454
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/harvey-bradshaw/calculator.js",
+          "sha256": "b354c019961f8e41af4f547aa60a4f162fa9b66d69cd23ffbf4e63f2638f1260",
+          "bytes": 5454
+        },
+        {
+          "file": "apps/command-center/private/tool-code/harvey-bradshaw/calculator.js",
+          "sha256": "b354c019961f8e41af4f547aa60a4f162fa9b66d69cd23ffbf4e63f2638f1260",
+          "bytes": 5454
+        }
+      ],
+      "qualifications": [
+        "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+        "Original stool count is open. Current local maximum40 is an implementation input bound and not the source theoretical maximum. Finite witnesses do not certify every count or everycomplication combination. No exact CDAI conversion, clinical remission or prognostic approval. The sponsor protocol displays proprietary terms; its use here is private factual numeric verification, not a redistribution/translation licence.",
+        "No clinical categories/main/severity/advice/diagnosis/prognostic performance/source-rights or professional-language approval. Full numeric observations are historical frozen Node/VM/Chromium; this preparation adds only bounded fresh Node samples.",
+        "Ottawa primary Boolean result and separately counted supplied true findings are not a validated point-risk score. Rockall pre-score is the source point-code sum; preEndoscopic context is not an exposed clinical classifier.",
+        "Whole catalogues are not staged; only these two evidence leaves per ID and complete banks are owned. Source28/six-neuromotor29 helper branches and counters must be composed separately."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "HBI/Harvey Bradshaw 1980:5 domínios, fezeslíquidascontagem aberta; sem CDAI",
+    "implementationVersion": "harvey-bradshaw@native-2026-10-03+b354c019961f",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/6102236/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Bem-estar (0 a 4) + dor abdominal (0 a 3) + número de evacuações líquidas no dia anterior + massa abdominal (0 a 3) + 1 ponto por complicação presente.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "bem",
+            "label": "Bem-estar geral (dia anterior)",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Muito bem",
+              "1": "Levemente abaixo do normal",
+              "2": "Ruim",
+              "3": "Muito ruim",
+              "4": "Péssimo"
+            }
+          },
+          {
+            "key": "dor",
+            "label": "Dor abdominal (dia anterior)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Nenhuma",
+              "1": "Leve",
+              "2": "Moderada",
+              "3": "Intensa"
+            }
+          },
+          {
+            "key": "evac",
+            "label": "Evacuações líquidas ou muito moles (dia anterior)",
+            "type": "num",
+            "min": 0,
+            "max": 40,
+            "unit": "por dia",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "massa",
+            "label": "Massa abdominal",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Ausente",
+              "1": "Duvidosa",
+              "2": "Definida",
+              "3": "Definida e dolorosa"
+            }
+          },
+          {
+            "key": "artralgia",
+            "label": "Artralgia",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "uveite",
+            "label": "Uveíte",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "eritema",
+            "label": "Eritema nodoso",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "aftas",
+            "label": "Úlceras aftosas",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "pioderma",
+            "label": "Pioderma gangrenoso",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fissura",
+            "label": "Fissura anal",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fistula",
+            "label": "Fístula nova",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "abscesso",
+            "label": "Abscesso",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "cd88fdb21fb4b8067dd001044270e98a6723c21677f2ab2386a5b7a0f92f7748"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Harvey RF, Bradshaw JM. A simple index of Crohn's-disease activity. Lancet, 1980.",
+          "url": "https://doi.org/10.1016/S0140-6736(80)92767-1",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A simple index of Crohn's-disease activity.",
+            "year": "1980",
+            "firstPublicationDate": "1980-03-01",
+            "doi": "10.1016/s0140-6736(80)92767-1",
+            "pmid": "6102236",
+            "journal": "Lancet (London, England)",
+            "authors": "Harvey RF, Bradshaw JM."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/6102236/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Best WR. Predicting the Crohn's disease activity index from the Harvey-Bradshaw Index. Inflamm Bowel Dis, 2006.",
+          "url": "https://doi.org/10.1097/01.MIB.0000215091.77492.2a",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Predicting the Crohn's disease activity index from the Harvey-Bradshaw Index.",
+            "year": "2006",
+            "firstPublicationDate": "2006-04-01",
+            "doi": "10.1097/01.mib.0000215091.77492.2a",
+            "pmid": "16633052",
+            "journal": "Inflammatory bowel diseases",
+            "authors": "Best WR."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/16633052/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "332618bb1cca1c3519a4fffd554bb13d52e8d374e65aaff3eb5d77b76b58dc4c",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Vermeire S et al. Correlation between the Crohn's disease activity and Harvey-Bradshaw indices in assessing Crohn's disease severity. Clin Gastroenterol Hepatol, 2010.",
+          "url": "https://doi.org/10.1016/j.cgh.2010.01.001",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Correlation between the Crohn's disease activity and Harvey-Bradshaw indices in assessing Crohn's disease severity.",
+            "year": "2010",
+            "firstPublicationDate": "2010-01-21",
+            "doi": "10.1016/j.cgh.2010.01.001",
+            "pmid": "20096379",
+            "journal": "Clinical gastroenterology and hepatology : the official clinical practice journal of the American Gastroenterological Association",
+            "authors": "Vermeire S, Schreiber S, Sandborn WJ, Dubois C, Rutgeerts P."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/20096379/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "a1630824d05937941ec31756e93f7651630e69ec23d37f43b8a1e320780ee777",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:33:44.535Z",
+        "total": 12960,
+        "passed": 12960,
+        "sourceRowCount": 12960,
+        "uniqueApiInputCount": 12960,
+        "sourceContextCount": 12960,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "8c626a144b08b7f01ab01833f3aa745a45b41b4cbce42923d413121f9474f6b6",
+          "total": 12960,
+          "bankRowCount": 12960,
+          "uniqueApiInputCount": 12960,
+          "sourceContextCount": 12960,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/root-six-independent-expectations-final29.json",
+              "sha256": "92f70c18f7b9f7b96089197af3288c3e7695f1c8e219ef036d4f0989bddfb125"
+            },
+            {
+              "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+              "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/root-six-independent-source-check-final29.json",
+            "sha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043"
+          }
+        },
+        "inputIdentity": "Exact complete immutable API input objects; not execution/runtime counts",
+        "scope": "All80 wellbeing/pain/mass codes crossed with nine stoolcounts and none/all/onepresent/oneabsent complication witnesses. Not allopenstoolcount combinations.",
+        "sources": [
+          {
+            "review": {
+              "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+              "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+            },
+            "item": {
+              "id": "harvey-bradshaw",
+              "edition": "HBI1980 five components reproduced in primary sponsor protocolMLN0002_401v3.1 AppendixG printed59 (PDFpage60)",
+              "reads": [
+                {
+                  "url": "https://catalogues.ema.europa.eu/sites/default/files/document_files/MLN0002_401-Protocol-V3.1-Redacted.pdf",
+                  "read": "Sponsor trial protocol in official EMA catalogue. AppendixG table, eight complications, total and severity rows visually read. No claim original1980 full paper was obtained.",
+                  "artifact": {
+                    "file": "root-source29-primary-pdfs/harvey-bradshaw-ema-protocol-v3-1.pdf",
+                    "sha256": "aa4e4e7035f1b806f5e25b5084b1d50fbe6fecacf47f7722b291b3e613024bd3",
+                    "bytes": 8296802
+                  }
+                }
+              ],
+              "constants": {
+                "wellbeing": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "pain": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "mass": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "complicationKeys": [
+                  "artralgia",
+                  "uveite",
+                  "eritema",
+                  "aftas",
+                  "pioderma",
+                  "fissura",
+                  "fistula",
+                  "abscesso"
+                ],
+                "eachComplication": 1,
+                "stoolWitnesses": [
+                  0,
+                  1,
+                  4,
+                  5,
+                  7,
+                  8,
+                  16,
+                  17,
+                  40
+                ]
+              },
+              "limitations": [
+                "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+                "Original stool count is open. Current local maximum40 is an implementation input bound and not the source theoretical maximum. Finite witnesses do not certify every count or everycomplication combination. No exact CDAI conversion, clinical remission or prognostic approval. The sponsor protocol displays proprietary terms; its use here is private factual numeric verification, not a redistribution/translation licence."
+              ]
+            },
+            "originalSourceReview": {
+              "file": "root-six-primary-source-review-final29.json",
+              "sha256": "5bc754345b3db4ae9521890531cd0e244684bfd168ab88b0b882045fc7b7f036"
+            },
+            "erratum": "Rockall original>100 narrative is retained in the original review; primaryR2 corrects it to≥100 without changing oracle, inputs or code."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/root-six-independent-source-check-final29.json",
+        "evidenceSha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043",
+        "independentPeer": {
+          "status": "reviewed",
+          "file": "reports/review-20261003/root-six-independent-peer-publication-final29-r2.json",
+          "sha256": "9a364220970a26f43c0d738bb7f1b1dfe96d33f064478c7d6c830c1dc0f72518",
+          "scope": "Independent numeric/source-scope peer only",
+          "factualSourceAmendment": {
+            "file": "reports/review-20261003/root-six-publication-own-source-review-final29-r2.json",
+            "sha256": "c5b320651855564578dbb871a91bd9770c09594497b40ea0560be84d75d8139c"
+          }
+        },
+        "metadataPackagingPeer": {
+          "status": "reviewed",
+          "file": "reports/review-20261003/root-six-bank-packaging-peer-final29-r2.json",
+          "sha256": "e1bfe5287b4cc1defcce6c29ecc9d901cf9b5be19aeb047499da56273b9feb69",
+          "scope": "Independent technical bank/helper packaging and frozen raw-output replay; no clinical, professional-language, source-rights or full-method approval.",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "originalSourceExecutions": 116640,
+        "freshPreparationSampleExecutions": 12,
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/harvey-bradshaw/calculator.js",
+            "sha256": "b354c019961f8e41af4f547aa60a4f162fa9b66d69cd23ffbf4e63f2638f1260",
+            "bytes": 5454
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/harvey-bradshaw/calculator.js",
+            "sha256": "b354c019961f8e41af4f547aa60a4f162fa9b66d69cd23ffbf4e63f2638f1260",
+            "bytes": 5454
+          },
+          {
+            "file": "apps/command-center/private/tool-code/harvey-bradshaw/calculator.js",
+            "sha256": "b354c019961f8e41af4f547aa60a4f162fa9b66d69cd23ffbf4e63f2638f1260",
+            "bytes": 5454
+          }
+        ],
+        "qualifications": [
+          "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+          "Original stool count is open. Current local maximum40 is an implementation input bound and not the source theoretical maximum. Finite witnesses do not certify every count or everycomplication combination. No exact CDAI conversion, clinical remission or prognostic approval. The sponsor protocol displays proprietary terms; its use here is private factual numeric verification, not a redistribution/translation licence.",
+          "No clinical categories/main/severity/advice/diagnosis/prognostic performance/source-rights or professional-language approval. Full numeric observations are historical frozen Node/VM/Chromium; this preparation adds only bounded fresh Node samples.",
+          "Ottawa primary Boolean result and separately counted supplied true findings are not a validated point-risk score. Rockall pre-score is the source point-code sum; preEndoscopic context is not an exposed clinical classifier.",
+          "Whole catalogues are not staged; only these two evidence leaves per ID and complete banks are owned. Source28/six-neuromotor29 helper branches and counters must be composed separately."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "b354c019961f8e41af4f547aa60a4f162fa9b66d69cd23ffbf4e63f2638f1260"
+    },
+    "limits": "O Harvey–Bradshaw descreve atividade clínica da doença de Crohn, incluindo a contagem de evacuações líquidas do dia anterior e a avaliação de massa e complicações. Não diagnostica Crohn nem substitui avaliação de inflamação ou de outras causas dos sintomas. A relação com o CDAI é boa, mas imperfeita: Best 2006 analisou 224 visitas e documentou limites de previsão, portanto um HBI não pode ser convertido em CDAI exato. Os resultados de resposta e remissão dos estudos citados pertencem às populações e períodos desses ensaios.",
+    "limitsEvidence": {
+      "status": "original-comparison-study-abstracts-read",
+      "sources": [
+        {
+          "url": "https://doi.org/10.1097/01.MIB.0000215091.77492.2a",
+          "edition": "Best2006",
+          "readScope": "Exact original abstract fully read:224singlevisits,HBI0–19,imperfectCDAIrelationship,prediction limits."
+        },
+        {
+          "url": "https://doi.org/10.1016/j.cgh.2010.01.001",
+          "edition": "Vermeire2010",
+          "readScope": "Exact original abstract fully read:PRECiSE1/2Crohntrials,nearly1000datapairs;HBIresponse/remission correspondence. Cached correlation20.698 is a retrieval notation artifact, not accepted numeric evidence."
+        },
+        {
+          "url": "https://doi.org/10.1016/S0140-6736(80)92767-1",
+          "edition": "Harvey/Bradshaw1980",
+          "readScope": "Identity only."
+        }
+      ],
+      "populationScope": "Crohn disease symptom activity;not definitive diagnosis or identicalCDAI.",
+      "remainingChecks": [
+        "Original1980 full instrument not newly read.",
+        "No full conformance of all clinical anchors."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/harvey-bradshaw/calculator.js",
+    "bytes": 5454,
+    "sha256": "b354c019961f8e41af4f547aa60a4f162fa9b66d69cd23ffbf4e63f2638f1260"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "b7554a494057673a164b9d417bef5844c9061375e4a9350208915e71b9faca05",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "f6af6addccef05ab858c809b202904421f82ba07a028449402913b82c66bcc2f",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "f6af6addccef05ab858c809b202904421f82ba07a028449402913b82c66bcc2f",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

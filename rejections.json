@@ -1,0 +1,628 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field bem",
+    "input": {
+      "dor": "0",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "bem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field bem",
+    "input": {
+      "bem": "",
+      "dor": "0",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "bem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option bem",
+    "input": {
+      "bem": "__ELUCENIA_INVALID_OPTION__",
+      "dor": "0",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "bem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field dor",
+    "input": {
+      "bem": "0",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "dor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field dor",
+    "input": {
+      "bem": "0",
+      "dor": "",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "dor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option dor",
+    "input": {
+      "bem": "0",
+      "dor": "__ELUCENIA_INVALID_OPTION__",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "dor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field evac",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "evac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field evac",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": "",
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "evac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" evac",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": "NaN",
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "evac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" evac",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": "Infinity",
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "evac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" evac",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": "1e309",
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "evac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" evac",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": "invalid",
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "evac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} evac",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": {},
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "evac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true evac",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": true,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "evac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum evac",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": -1,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "evac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum evac",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 44,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "evac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field massa",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "massa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field massa",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "massa": "",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "massa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option massa",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "massa": "__ELUCENIA_INVALID_OPTION__",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "massa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean artralgia",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": "2",
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "artralgia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean uveite",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": "2",
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "uveite"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean eritema",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": "2",
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "eritema"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean aftas",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": "2",
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "aftas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean pioderma",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": "2",
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pioderma"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean fissura",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": "2",
+      "fistula": false,
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fissura"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean fistula",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": "2",
+      "abscesso": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fistula"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean abscesso",
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "abscesso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

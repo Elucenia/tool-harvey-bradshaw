@@ -1,94 +1,202 @@
 [
   {
-    "label": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
-    "input": {
+    "id": "harvey-bradshaw",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+    "originalInput": {
       "bem": "0",
       "dor": "0",
       "evac": 2,
       "massa": "0"
+    },
+    "input": {
+      "bem": "0",
+      "dor": "0",
+      "evac": 2,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
     },
     "expected": {
       "score": 2,
       "level": "low",
       "verdict": "Remissão"
     },
-    "originalInput": {
-      "bem": "0",
-      "dor": "0",
-      "evac": 2,
-      "massa": "0"
+    "recordedResult": {
+      "main": [
+        "2",
+        "pontos"
+      ],
+      "label": "Índice de Harvey-Bradshaw",
+      "raw": {
+        "score": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
-    "input": {
+    "id": "harvey-bradshaw",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+    "originalInput": {
       "bem": "1",
       "dor": "1",
       "evac": 3,
       "massa": "0"
+    },
+    "input": {
+      "bem": "1",
+      "dor": "1",
+      "evac": 3,
+      "massa": "0",
+      "artralgia": false,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false,
+      "abscesso": false
     },
     "expected": {
       "score": 5,
       "level": "mid",
       "verdict": "leve"
     },
-    "originalInput": {
-      "bem": "1",
-      "dor": "1",
-      "evac": 3,
-      "massa": "0"
+    "recordedResult": {
+      "main": [
+        "5",
+        "pontos"
+      ],
+      "label": "Índice de Harvey-Bradshaw",
+      "raw": {
+        "score": 5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
-    "input": {
+    "id": "harvey-bradshaw",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+    "originalInput": {
       "bem": "2",
       "dor": "2",
       "evac": 8,
       "massa": "2",
       "artralgia": true,
       "fistula": true
+    },
+    "input": {
+      "bem": "2",
+      "dor": "2",
+      "evac": 8,
+      "massa": "2",
+      "artralgia": true,
+      "fistula": true,
+      "uveite": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "abscesso": false
     },
     "expected": {
       "score": 16,
       "level": "high",
       "verdict": "moderada"
     },
-    "originalInput": {
-      "bem": "2",
-      "dor": "2",
-      "evac": 8,
-      "massa": "2",
-      "artralgia": true,
-      "fistula": true
+    "recordedResult": {
+      "main": [
+        "16",
+        "pontos"
+      ],
+      "label": "Índice de Harvey-Bradshaw",
+      "raw": {
+        "score": 16
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+    "id": "harvey-bradshaw",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+    "originalInput": {
+      "bem": "3",
+      "dor": "3",
+      "evac": 10,
+      "massa": "3",
+      "uveite": true,
+      "abscesso": true
+    },
     "input": {
       "bem": "3",
       "dor": "3",
       "evac": 10,
       "massa": "3",
       "uveite": true,
-      "abscesso": true
+      "abscesso": true,
+      "artralgia": false,
+      "eritema": false,
+      "aftas": false,
+      "pioderma": false,
+      "fissura": false,
+      "fistula": false
     },
     "expected": {
       "score": 21,
       "level": "high",
       "verdict": "grave"
     },
-    "originalInput": {
-      "bem": "3",
-      "dor": "3",
-      "evac": 10,
-      "massa": "3",
-      "uveite": true,
-      "abscesso": true
+    "recordedResult": {
+      "main": [
+        "21",
+        "pontos"
+      ],
+      "label": "Índice de Harvey-Bradshaw",
+      "raw": {
+        "score": 21
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
