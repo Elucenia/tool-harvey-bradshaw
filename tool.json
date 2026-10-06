@@ -361,7 +361,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "HBI/Harvey Bradshaw 1980:5 domínios, fezeslíquidascontagem aberta; sem CDAI",
-    "implementationVersion": "harvey-bradshaw@native-2026-10-03+b354c019961f",
+    "implementationVersion": "harvey-bradshaw@native-2026-10-05+340b9c0a2ccd",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/6102236/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -713,7 +713,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "b354c019961f8e41af4f547aa60a4f162fa9b66d69cd23ffbf4e63f2638f1260"
+      "implementationHash": "340b9c0a2ccd46c9859c87cd6cdbfdf5b648ee1ead29f758d1d39afee0ec20bb",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "harvey-bradshaw@native-2026-10-03+b354c019961f",
+          "previousImplementationHash": "b354c019961f8e41af4f547aa60a4f162fa9b66d69cd23ffbf4e63f2638f1260",
+          "implementationHash": "340b9c0a2ccd46c9859c87cd6cdbfdf5b648ee1ead29f758d1d39afee0ec20bb",
+          "scientificBodySha256": "e3b63ae098fdf9af38d2441d3a803d31e80cf3eac96134b5e5f82143ac0d8c29",
+          "metadataContractHash": "cd88fdb21fb4b8067dd001044270e98a6723c21677f2ab2386a5b7a0f92f7748",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O Harvey–Bradshaw descreve atividade clínica da doença de Crohn, incluindo a contagem de evacuações líquidas do dia anterior e a avaliação de massa e complicações. Não diagnostica Crohn nem substitui avaliação de inflamação ou de outras causas dos sintomas. A relação com o CDAI é boa, mas imperfeita: Best 2006 analisou 224 visitas e documentou limites de previsão, portanto um HBI não pode ser convertido em CDAI exato. Os resultados de resposta e remissão dos estudos citados pertencem às populações e períodos desses ensaios.",
     "limitsEvidence": {
@@ -748,20 +776,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/harvey-bradshaw/calculator.js",
-    "bytes": 5454,
-    "sha256": "b354c019961f8e41af4f547aa60a4f162fa9b66d69cd23ffbf4e63f2638f1260"
+    "bytes": 5659,
+    "sha256": "340b9c0a2ccd46c9859c87cd6cdbfdf5b648ee1ead29f758d1d39afee0ec20bb"
   },
-  "sourceToolSha256": "b7554a494057673a164b9d417bef5844c9061375e4a9350208915e71b9faca05",
+  "sourceToolSha256": "dc7f1cf6f301676513592acc896888c239a6875da9c07a0e000d27b4e779fb4b",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "f6af6addccef05ab858c809b202904421f82ba07a028449402913b82c66bcc2f",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "f6af6addccef05ab858c809b202904421f82ba07a028449402913b82c66bcc2f",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

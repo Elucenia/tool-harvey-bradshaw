@@ -1,0 +1,1175 @@
+{
+  "id": "harvey-bradshaw",
+  "implementationVersion": "harvey-bradshaw@native-2026-10-05+340b9c0a2ccd",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complicações somadas",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Remissão clínica (< 5)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complicações somadas",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Atividade leve (5 a 7)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complicações somadas",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Atividade moderada (8 a 16)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complicações somadas",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Atividade grave (> 16)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sum of complications",
+                "locale": "en",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Clinical remission (< 5)",
+            "locale": "en",
+            "template": "documented-authored-ebeaaf8804e67ef29900"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sum of complications",
+                "locale": "en",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mild activity (5 to 7)",
+            "locale": "en",
+            "template": "documented-authored-502b350dfb51c16e3af8"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sum of complications",
+                "locale": "en",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Moderate activity (8 to 16)",
+            "locale": "en",
+            "template": "documented-authored-65fd4c3f3ed27d09f603"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sum of complications",
+                "locale": "en",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Severe activity (> 16)",
+            "locale": "en",
+            "template": "documented-authored-f4420c2537cb9f559cbb"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complicaciones sumadas",
+                "locale": "es",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Remisión clínica (< 5)",
+            "locale": "es",
+            "template": "documented-authored-ebeaaf8804e67ef29900"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complicaciones sumadas",
+                "locale": "es",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Actividad leve (5 a 7)",
+            "locale": "es",
+            "template": "documented-authored-502b350dfb51c16e3af8"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complicaciones sumadas",
+                "locale": "es",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Actividad moderada (8 a 16)",
+            "locale": "es",
+            "template": "documented-authored-65fd4c3f3ed27d09f603"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complicaciones sumadas",
+                "locale": "es",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Actividad grave (> 16)",
+            "locale": "es",
+            "template": "documented-authored-f4420c2537cb9f559cbb"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complications additionnées",
+                "locale": "fr",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rémission clinique (< 5)",
+            "locale": "fr",
+            "template": "documented-authored-ebeaaf8804e67ef29900"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complications additionnées",
+                "locale": "fr",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Activité légère (5 à 7)",
+            "locale": "fr",
+            "template": "documented-authored-502b350dfb51c16e3af8"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complications additionnées",
+                "locale": "fr",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Activité modérée (8 à 16)",
+            "locale": "fr",
+            "template": "documented-authored-65fd4c3f3ed27d09f603"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complications additionnées",
+                "locale": "fr",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Activité sévère (> 16)",
+            "locale": "fr",
+            "template": "documented-authored-f4420c2537cb9f559cbb"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Summierte Komplikationen",
+                "locale": "de",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Klinische Remission (< 5)",
+            "locale": "de",
+            "template": "documented-authored-ebeaaf8804e67ef29900"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Summierte Komplikationen",
+                "locale": "de",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Leichte Aktivität (5 bis 7)",
+            "locale": "de",
+            "template": "documented-authored-502b350dfb51c16e3af8"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Summierte Komplikationen",
+                "locale": "de",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mäßige Aktivität (8 bis 16)",
+            "locale": "de",
+            "template": "documented-authored-65fd4c3f3ed27d09f603"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Summierte Komplikationen",
+                "locale": "de",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Schwere Aktivität (> 16)",
+            "locale": "de",
+            "template": "documented-authored-f4420c2537cb9f559cbb"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complicanze sommate",
+                "locale": "it",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Remissione clinica (< 5)",
+            "locale": "it",
+            "template": "documented-authored-ebeaaf8804e67ef29900"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complicanze sommate",
+                "locale": "it",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Attività lieve (5 a 7)",
+            "locale": "it",
+            "template": "documented-authored-502b350dfb51c16e3af8"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complicanze sommate",
+                "locale": "it",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Attività moderata (8 a 16)",
+            "locale": "it",
+            "template": "documented-authored-65fd4c3f3ed27d09f603"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Complicanze sommate",
+                "locale": "it",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Attività grave (> 16)",
+            "locale": "it",
+            "template": "documented-authored-f4420c2537cb9f559cbb"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المضاعفات المجمعة",
+                "locale": "ar",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "هدأة سريرية (< 5)",
+            "locale": "ar",
+            "template": "documented-authored-ebeaaf8804e67ef29900"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المضاعفات المجمعة",
+                "locale": "ar",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "نشاط خفيف (5 إلى 7)",
+            "locale": "ar",
+            "template": "documented-authored-502b350dfb51c16e3af8"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المضاعفات المجمعة",
+                "locale": "ar",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "نشاط متوسط (8 إلى 16)",
+            "locale": "ar",
+            "template": "documented-authored-65fd4c3f3ed27d09f603"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المضاعفات المجمعة",
+                "locale": "ar",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "نشاط شديد (> 16)",
+            "locale": "ar",
+            "template": "documented-authored-f4420c2537cb9f559cbb"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "并发症总分",
+                "locale": "zh",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "临床缓解（< 5）",
+            "locale": "zh",
+            "template": "documented-authored-ebeaaf8804e67ef29900"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "并发症总分",
+                "locale": "zh",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "轻度活动（5 至 7）",
+            "locale": "zh",
+            "template": "documented-authored-502b350dfb51c16e3af8"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "并发症总分",
+                "locale": "zh",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中度活动（8 至 16）",
+            "locale": "zh",
+            "template": "documented-authored-65fd4c3f3ed27d09f603"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "并发症总分",
+                "locale": "zh",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "重度活动（> 16）",
+            "locale": "zh",
+            "template": "documented-authored-f4420c2537cb9f559cbb"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "合計合併症",
+                "locale": "ja",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "臨床的寛解（< 5）",
+            "locale": "ja",
+            "template": "documented-authored-ebeaaf8804e67ef29900"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "合計合併症",
+                "locale": "ja",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "軽度活動（5〜7）",
+            "locale": "ja",
+            "template": "documented-authored-502b350dfb51c16e3af8"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "合計合併症",
+                "locale": "ja",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等度活動（8〜16）",
+            "locale": "ja",
+            "template": "documented-authored-65fd4c3f3ed27d09f603"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "合計合併症",
+                "locale": "ja",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "重度活動（> 16）",
+            "locale": "ja",
+            "template": "documented-authored-f4420c2537cb9f559cbb"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "जटिलताओं का योग",
+                "locale": "hi",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "क्लिनिकल रेमिशन (< 5)",
+            "locale": "hi",
+            "template": "documented-authored-ebeaaf8804e67ef29900"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "जटिलताओं का योग",
+                "locale": "hi",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "हल्की सक्रियता (5 से 7)",
+            "locale": "hi",
+            "template": "documented-authored-502b350dfb51c16e3af8"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "जटिलताओं का योग",
+                "locale": "hi",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मध्यम सक्रियता (8 से 16)",
+            "locale": "hi",
+            "template": "documented-authored-65fd4c3f3ed27d09f603"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "जटिलताओं का योग",
+                "locale": "hi",
+                "template": "documented-authored-1adf8ef0fea3478b9146"
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "documented-authored-3493f64fb1aba8b1c2d8",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "गंभीर सक्रियता (> 16)",
+            "locale": "hi",
+            "template": "documented-authored-f4420c2537cb9f559cbb"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

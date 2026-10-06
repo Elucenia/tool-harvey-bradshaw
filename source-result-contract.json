@@ -1,0 +1,280 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "harvey-bradshaw",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "2356f0afef9c93142e1a95a1bf3ebb4f5c96c11b",
+    "oldEngineSha256": "b354c019961f8e41af4f547aa60a4f162fa9b66d69cd23ffbf4e63f2638f1260",
+    "currentEngineSha256": "340b9c0a2ccd46c9859c87cd6cdbfdf5b648ee1ead29f758d1d39afee0ec20bb"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Bem-estar 0, sem dor, 2 evacuações, sem massa nem complicações: 2 (remissão)",
+      "input": {
+        "bem": "0",
+        "dor": "0",
+        "evac": 2,
+        "massa": "0",
+        "artralgia": false,
+        "uveite": false,
+        "eritema": false,
+        "aftas": false,
+        "pioderma": false,
+        "fissura": false,
+        "fistula": false,
+        "abscesso": false
+      },
+      "publicOutput": {
+        "id": "harvey-bradshaw",
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "Índice de Harvey-Bradshaw",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "low",
+        "verdict": "Remissão"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "Índice de Harvey-Bradshaw",
+        "level": "low",
+        "verdict": "Remissão clínica (&lt; 5)",
+        "rows": [
+          [
+            "Complicações somadas",
+            "0"
+          ]
+        ],
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Bem-estar 1, dor leve, 3 evacuações: 5 (leve, limite)",
+      "input": {
+        "bem": "1",
+        "dor": "1",
+        "evac": 3,
+        "massa": "0",
+        "artralgia": false,
+        "uveite": false,
+        "eritema": false,
+        "aftas": false,
+        "pioderma": false,
+        "fissura": false,
+        "fistula": false,
+        "abscesso": false
+      },
+      "publicOutput": {
+        "id": "harvey-bradshaw",
+        "main": [
+          "5",
+          "pontos"
+        ],
+        "label": "Índice de Harvey-Bradshaw",
+        "raw": {
+          "score": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 5,
+        "level": "mid",
+        "verdict": "leve"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "pontos"
+        ],
+        "label": "Índice de Harvey-Bradshaw",
+        "level": "mid",
+        "verdict": "Atividade leve (5 a 7)",
+        "rows": [
+          [
+            "Complicações somadas",
+            "0"
+          ]
+        ],
+        "raw": {
+          "score": 5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Bem-estar 2, dor moderada, 8 evacuações, massa definida, artralgia e fístula: 16 (moderada)",
+      "input": {
+        "bem": "2",
+        "dor": "2",
+        "evac": 8,
+        "massa": "2",
+        "artralgia": true,
+        "fistula": true,
+        "uveite": false,
+        "eritema": false,
+        "aftas": false,
+        "pioderma": false,
+        "fissura": false,
+        "abscesso": false
+      },
+      "publicOutput": {
+        "id": "harvey-bradshaw",
+        "main": [
+          "16",
+          "pontos"
+        ],
+        "label": "Índice de Harvey-Bradshaw",
+        "raw": {
+          "score": 16
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 16,
+        "level": "high",
+        "verdict": "moderada"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "16",
+          "pontos"
+        ],
+        "label": "Índice de Harvey-Bradshaw",
+        "level": "high",
+        "verdict": "Atividade moderada (8 a 16)",
+        "rows": [
+          [
+            "Complicações somadas",
+            "2"
+          ]
+        ],
+        "raw": {
+          "score": 16
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Bem-estar 3, dor intensa, 10 evacuações, massa dolorosa, uveíte e abscesso: 21 (grave)",
+      "input": {
+        "bem": "3",
+        "dor": "3",
+        "evac": 10,
+        "massa": "3",
+        "uveite": true,
+        "abscesso": true,
+        "artralgia": false,
+        "eritema": false,
+        "aftas": false,
+        "pioderma": false,
+        "fissura": false,
+        "fistula": false
+      },
+      "publicOutput": {
+        "id": "harvey-bradshaw",
+        "main": [
+          "21",
+          "pontos"
+        ],
+        "label": "Índice de Harvey-Bradshaw",
+        "raw": {
+          "score": 21
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 21,
+        "level": "high",
+        "verdict": "grave"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "21",
+          "pontos"
+        ],
+        "label": "Índice de Harvey-Bradshaw",
+        "level": "high",
+        "verdict": "Atividade grave (&gt; 16)",
+        "rows": [
+          [
+            "Complicações somadas",
+            "2"
+          ]
+        ],
+        "raw": {
+          "score": 21
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}
